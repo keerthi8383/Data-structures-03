@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,t1=3,t2=7;
+	int nexterm=t1+t2;
+	printf("enter number of terms\n");
+	scanf("%d",&n);
+	printf("%d%d",t1,t2);
+	{
+		for(i=1;i<n;i++)
+		printf("%d",nexterm);
+		t1=t2;
+		t2=nexterm;
+		nexterm=t1+t2;
+	}
+	return 0;
+}
